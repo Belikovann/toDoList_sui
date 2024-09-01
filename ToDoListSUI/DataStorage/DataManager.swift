@@ -136,7 +136,7 @@ class DataManager: NSObject, ObservableObject {
                     taskEntity.isCompleted = isCompleted
                     saveData()
                     
-                    // Immediately update the UI by re-fetching tasks
+                    //  update UI
                     if let index = tasks.firstIndex(where: { $0.id == id }) {
                         tasks[index].completed = isCompleted
                     }

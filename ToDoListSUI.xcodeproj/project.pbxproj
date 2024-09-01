@@ -23,7 +23,7 @@
 		C8C7D4E62C8372AF00EBC553 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C7D4E52C8372AF00EBC553 /* NetworkManager.swift */; };
 		C8C7D4E82C8372B600EBC553 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C7D4E72C8372B600EBC553 /* Task.swift */; };
 		C8C7D4EA2C8372FE00EBC553 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C7D4E92C8372FE00EBC553 /* DateManager.swift */; };
-		C8C7D4ED2C83740400EBC553 /* TaskList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8C7D4EB2C83740400EBC553 /* TaskList.xcdatamodeld */; };
+		C8F67E152C85060900C53ADC /* TaskList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8F67E132C85060900C53ADC /* TaskList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,7 @@
 		C8C7D4E52C8372AF00EBC553 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C8C7D4E72C8372B600EBC553 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		C8C7D4E92C8372FE00EBC553 /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
-		C8C7D4EC2C83740400EBC553 /* TaskList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskList.xcdatamodel; sourceTree = "<group>"; };
+		C8F67E142C85060900C53ADC /* TaskList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskList.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			children = (
 				C8C7D4D42C83717A00EBC553 /* DataManager.swift */,
 				C8C7D4C92C83704800EBC553 /* Persistence.swift */,
-				C8C7D4EB2C83740400EBC553 /* TaskList.xcdatamodeld */,
+				C8F67E132C85060900C53ADC /* TaskList.xcdatamodeld */,
 			);
 			path = DataStorage;
 			sourceTree = "<group>";
@@ -227,7 +227,7 @@
 				C8C7D4C12C83704700EBC553 /* ToDoListSUIApp.swift in Sources */,
 				C8C7D4E42C8372A200EBC553 /* NewTaskView.swift in Sources */,
 				C8C7D4D82C83724900EBC553 /* PersonalTasksView.swift in Sources */,
-				C8C7D4ED2C83740400EBC553 /* TaskList.xcdatamodeld in Sources */,
+				C8F67E152C85060900C53ADC /* TaskList.xcdatamodeld in Sources */,
 				C8C7D4E22C83729500EBC553 /* EditTaskVM.swift in Sources */,
 				C8C7D4E82C8372B600EBC553 /* Task.swift in Sources */,
 				C8C7D4E02C83728E00EBC553 /* EditTaskView.swift in Sources */,
@@ -448,14 +448,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C8C7D4EB2C83740400EBC553 /* TaskList.xcdatamodeld */ = {
+		C8F67E132C85060900C53ADC /* TaskList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C8C7D4EC2C83740400EBC553 /* TaskList.xcdatamodel */,
+				C8F67E142C85060900C53ADC /* TaskList.xcdatamodel */,
 			);
-			currentVersion = C8C7D4EC2C83740400EBC553 /* TaskList.xcdatamodel */;
+			currentVersion = C8F67E142C85060900C53ADC /* TaskList.xcdatamodel */;
 			name = TaskList.xcdatamodeld;
-			path = /Users/belikovannn/Desktop/ToDoListSUI/ToDoListSUI/DataStorage/TaskList.xcdatamodeld;
+			path = /Users/belikovannn/Desktop/todoList_sui/todoList_sui/DataStorage/TaskList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

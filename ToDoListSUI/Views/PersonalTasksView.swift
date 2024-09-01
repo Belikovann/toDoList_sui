@@ -25,10 +25,11 @@ struct PersonalTasksView: View {
                         Text("There is nothing to do. You are free")
                     } else {
                         ForEach(dataManager.tasks) { task in
+                            let taskDate = dateManager.formattedDate(task.dateAdded ?? dateManager.currentDate())
                             
                             TaskItemView(
                                 name: task.todo,
-                                date: dateManager.formattedDate(task.dateAdded ?? dateManager.formattedDate(dateManager.currentDate()),
+                                date: taskDate,
                                 isCompleted: task.completed,
                                 statusMark: task.completed ? "checkmark.circle.fill" : "circle",
                                 isShownDescription: Binding<Bool>(
@@ -41,12 +42,11 @@ struct PersonalTasksView: View {
                                         }
                                     }
                                 ),
-                                description: (((task.description?.isEmpty) == nil) ? task.description! : "no description"),
+                                description: task.description?.isEmpty == false ? task.description! : "no description",
                                 updateStatus: {
                                     dataManager.updateStatusTask(id: task.id, isCompleted: !task.completed)
                                 }
                             )
-                           
                             .swipeActions(allowsFullSwipe: false) {
                                 Button(action: {
                                     selectedTask = task
@@ -110,4 +110,3 @@ struct PersonalTasksView: View {
         }
     }
 }
-
